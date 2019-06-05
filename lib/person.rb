@@ -1,7 +1,7 @@
 class Person 
   
-  attr_accessor(:name)
-  attr_reader
+  attr_accessor(:bank_account)
+  attr_reader(:name)
   attr_writer 
   
   def initialize(name)
