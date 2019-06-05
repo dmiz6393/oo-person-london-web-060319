@@ -1,5 +1,4 @@
 class Person 
-  
   attr_accessor:bank_account
   attr_reader:name, :happiness, :hygiene
   attr_writer 
@@ -66,7 +65,8 @@ def start_conversation(person,topic)
       person.happiness+=1
     "blah blah sun blah rain"
     
-  else "blah blah blah blah blah"
+  else 
+    "blah blah blah blah blah"
   end 
 end 
 end 
