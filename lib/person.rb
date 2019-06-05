@@ -20,5 +20,18 @@ class Person
   def happy? 
    @happiness>7 
   end 
+  
+  def clean?
+    @clean>7 
+  end 
+  
+  def get_paid(salary)
+    @bank_account+= salary 
+   "all about the benjamins"
+  end 
+  
+  def take_bath 
+    @hygiene+=4 
+    ""
  
 end 
