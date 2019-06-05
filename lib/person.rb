@@ -17,12 +17,17 @@ class Person
     @happiness=0  if @happiness<0
   end 
   
+  def hygiene=(number)
+    @hygiene=number 
+    @hygiene=10 if @hygiene>10 
+    @hygiene=0  if @hygiene<0
+  
   def happy? 
    @happiness>7 
   end 
   
   def clean?
-    @clean>7 
+    @hygiene>7 
   end 
   
   def get_paid(salary)
@@ -36,8 +41,11 @@ class Person
   end 
   
   def work_out 
-    @happiness+=2 && @hygiene-=3 
+    @happiness+=2
+    @hygiene-=3 
     "♪ another one bites the dust ♫"
   end 
  
+def call_friend 
+  
 end 
