@@ -37,15 +37,27 @@ class Person
   
   def take_bath 
     @hygiene+=4 
+    self.hygiene
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end 
   
   def work_out 
     @happiness+=2
+    self.happiness
     @hygiene-=3 
+    self.hygiene
     "♪ another one bites the dust ♫"
   end 
  
-def call_friend 
-  
+def call_friend(friend) 
+  self.happiness+=3 
+  friend.happiness+=3 
+  "Hi #{friend.name}! It's #{self.name}. How are you?"
+end 
+
+def start_conversation(person,topic)
+  if topic==politics 
+    self.happiness
+    person.happiness 
+    
 end 
