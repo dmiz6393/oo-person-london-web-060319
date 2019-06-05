@@ -36,16 +36,13 @@ class Person
   end 
   
   def take_bath 
-    @hygiene+=4 
-    self.hygiene
+    self.hygiene+=4
     "♪ Rub-a-dub just relaxing in the tub ♫"
   end 
   
   def work_out 
-    @happiness+=2
-    self.happiness
-    @hygiene-=3 
-    self.hygiene
+    self.happiness+=2
+    self.hygiene-=3
     "♪ another one bites the dust ♫"
   end 
  
