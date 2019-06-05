@@ -1,6 +1,6 @@
 class Person 
-  def initialize(name, date_of_birth)
+  
+  def initialize(name)
     @name = name
-    @date_of_birth = date_of_birth
   end
 end 
